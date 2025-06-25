@@ -27,6 +27,7 @@ CSS Styles
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -35,6 +36,7 @@ body {
     color: #333;
     background-color: #fff;
     padding-top: 100px;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -164,9 +166,16 @@ header {
 }
 
 .flag-icon {
-    width: 20px;
-    height: 15px;
-    border-radius: 2px;
+    width: 28px;
+    height: auto;
+    min-width: 24px;
+    max-width: 32px;
+    aspect-ratio: 4/3;
+    border-radius: 4px;
+    object-fit: cover;
+    display: inline-block;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
 }
 
 .mobile-menu-toggle {
@@ -174,6 +183,11 @@ header {
     font-size: 1.5rem;
     color: var(--primary-color);
     cursor: pointer;
+}
+
+.main-nav {
+    /* width: 100vw; */
+    width: 100%;
 }
 
 .main-nav ul {
@@ -332,9 +346,9 @@ header {
 }
 
 .program-card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 16px 48px rgba(0,0,0,0.16);
-    border-color: var(--secondary-color);
+    /* Desactivar scale en hover en pantallas chicas */
+    transform: none;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
 }
 
 .program-card.featured {
@@ -360,6 +374,15 @@ header {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+.program-content h3,
+.program-content p,
+.program-content li,
+.program-content a,
+.program-content .btn {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .program-content h3 {
@@ -463,9 +486,9 @@ header {
 }
 
 .team-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    border-color: var(--secondary-color);
+    /* Desactivar scale en hover en móvil */
+    transform: none;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
 }
 
 .team-logo {
@@ -872,19 +895,73 @@ footer {
 @media (max-width: 768px) {
     .mobile-menu-toggle {
         display: block;
+        position: absolute;
+        top: 2rem;
+        right: 1.5rem;
+        z-index: 1201;
     }
 
     .main-nav {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+        z-index: 1200;
+        padding: 2rem 0 2rem 0;
+        border-radius: 0 0 18px 18px;
     }
 
     .main-nav.active {
         display: block;
+        animation: fadeInDown 0.3s;
+    }
+
+    @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
     }
 
     .main-nav ul {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-nav a {
+        font-size: 1.2rem;
+        padding: 0.75rem 0;
+        color: var(--primary-color);
+        background: none;
+        border-radius: 0;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .main-nav .cta-button {
+        margin-top: 1rem;
+        width: 80vw;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .logo-language-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding-right: 3.5rem;
+    }
+
+    .language-selector {
+        gap: 0.2rem;
     }
 
     .hero h2 {
@@ -937,6 +1014,20 @@ footer {
         align-items: center;
         text-align: center;
     }
+
+    .flag-icon {
+        width: 28px;
+        min-width: 24px;
+        max-width: 32px;
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+
+    .program-card:hover {
+        /* Desactivar scale en hover en móvil */
+        transform: none;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    }
 }
 
 @media (max-width: 480px) {
@@ -965,6 +1056,12 @@ footer {
     .program-cards {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 2rem;
+    }
+
+    .program-card:hover {
+        /* Desactivar scale en hover en pantallas chicas */
+        transform: none;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.10);
     }
 }
 
