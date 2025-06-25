@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">Elite Basket | Entrenamiento Profesional de Baloncesto en España</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-language-wrapper">
+                <div class="logo">
+                    <h1><span>Elite</span> Basket <span>Scouting</span></h1>
+                </div>
+                <div class="language-selector">
+                    <a href="#" class="language-option active" data-lang="es">
+                        <img src="images/bandera-espana.webp" alt="Español" class="flag-icon">
+                        <span>ES</span>
+                    </a>
+                    <a href="#" class="language-option" data-lang="en">
+                        <img src="images/bandera-usa.webp" alt="English" class="flag-icon">
+                        <span>EN</span>
+                    </a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="#programs" data-i18n="nav_programs">Programas</a></li>
+                    <li><a href="#teams" data-i18n="nav_teams">Equipos</a></li>
+                    <li><a href="#about" data-i18n="nav_about">Nosotros</a></li>
+                    <li><a href="#testimonials" data-i18n="nav_testimonials">Testimonios</a></li>
+                    <li><a href="#facilities" data-i18n="nav_facilities">Instalaciones</a></li>
+                    <li><a href="#contact" class="cta-button" data-i18n="nav_contact">Solicitar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero" style="background-image: url('images/FckVt6hk-fond-decran-Basket-100.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 data-i18n="hero_title">Tu Camino al Baloncesto Profesional Comienza Aquí</h2>
+                <p data-i18n="hero_subtitle">Programas de entrenamiento de élite en los mejores clubes de España: Fuenlabrada, Baskonia, Unicaja, Valencia y Zentro Madrid</p>
+                <div class="hero-buttons">
+                    <a href="#programs" class="btn btn-primary" data-i18n="hero_btn_explore">Explorar Programas</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero_btn_apply">Solicitar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="programs_title">Programas de Entrenamiento</h2>
+                <p data-i18n="programs_subtitle">Entrenamiento de baloncesto profesional masculino y femenino inmersivo en los mejores clubes de España</p>
+            </div>
+            
+            <div class="program-cards">
+                <div class="program-card">
+                    <div class="program-content">
+                        <h3 data-i18n="program_1week_title">Programa Master (1 Semana)</h3>
+                        <p class="price">€3.500</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1week_feature0">Alojamiento y pensión completa</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1week_feature1">5 días de sesiones de entrenamiento de élite</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1week_feature2">Entrenamiento profesional con staff de clubes de ACB</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1week_feature3">Evaluación táctica y técnica</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1week_feature4">Plan de desarrollo personalizado</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1week_feature5">Kit de entrenamiento oficial del club</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1week_feature6">Sesión de análisis de video</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1week_feature7">Tour turístico guiado por la ciudad</span></li>
+                        </ul>
+                        <p class="note" data-i18n="program_note">* Aéreo no incluido</p>
+                        <p class="note" data-i18n="program_medical_note">* Cobertura médica a cargo del jugador</p>
+                        <a href="#contact" class="btn" data-i18n="program_apply_btn">Solicitar Ahora</a>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-content">
+                        <h3 data-i18n="program_15days_title">Programa Pro (15 Días)</h3>
+                        <p class="price">€5.400</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_15days_feature0">Alojamiento y pensión completa</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_15days_feature1">10 días de sesiones intensivas de entrenamiento</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_15days_feature3">Evaluación completa de habilidades</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_15days_feature4">Plan de desarrollo personalizado</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_15days_feature5">Programa de fuerza y acondicionamiento</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_15days_feature6">Talleres de nutrición y recuperación</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_15days_feature7">Partidos de entrenamiento con equipos juveniles</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_15days_feature8">Sesiones de análisis de video</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_15days_feature9">Paquete completo de kit de entrenamiento del club</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_15days_feature10">Informe de ojeadores y ruta de desarrollo</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_15days_feature11">Tour turístico guiado por la ciudad</span></li>
+                        </ul>
+                        <p class="note" data-i18n="program_note">* Aéreo no incluido</p>
+                        <p class="note" data-i18n="program_medical_note">* Cobertura médica a cargo del jugador</p>
+                        <a href="#contact" class="btn" data-i18n="program_apply_btn">Solicitar Ahora</a>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-content">
+                        <h3 data-i18n="program_1month_title">Programa Élite (1 Mes)</h3>
+                        <p class="price">€7.900</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature0">Alojamiento y pensión completa</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature1">20 días de entrenamiento de nivel profesional</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature2">Integración con la estructura de entrenamiento del club</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature4">Desarrollo técnico y táctico integral</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature5">Evaluación y programa de condición física profesional</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature6">Plan personalizado de nutrición y recuperación</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature7">Sesiones de coaching</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature8">Partidos competitivos con equipos de la academia</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature9">Asistencia de ojeadores en los partidos de entrenamiento</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature10">Informe profesional de ojeadores</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature11">Posible recomendación a clubes/academias</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature12">Kit completo de entrenamiento y partido del club</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_1month_feature13">Tour turístico guiado por la ciudad y alrededores</span></li>
+                        </ul>
+                        <p class="note" data-i18n="program_note">* Aéreo no incluido</p>
+                        <p class="note" data-i18n="program_medical_note">* Cobertura médica a cargo del jugador</p>
+                        <a href="#contact" class="btn" data-i18n="program_apply_btn">Solicitar Ahora</a>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-content">
+                        <h3 data-i18n="program_2months_title">Programa Avanzado (2 Meses)</h3>
+                        <p class="price">€10.200</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature0">Alojamiento y pensión completa</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature1">40 días de entrenamiento de nivel profesional</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature2">Integración con la estructura de entrenamiento del club</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature4">Desarrollo técnico y táctico integral</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature5">Evaluación y programa de condición física profesional</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature6">Plan personalizado de nutrición y recuperación</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature7">Sesiones de coaching</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature8">Partidos competitivos con equipos de la academia</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature9">Asistencia de ojeadores en los partidos de entrenamiento</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature10">Informe profesional de ojeadores</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature11">Posible recomendación a clubes/academias</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature12">Kit completo de entrenamiento y partido del club</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_2months_feature13">Tour turístico guiado por la ciudad y alrededores</span></li>
+                        </ul>
+                        <p class="note" data-i18n="program_note">* Aéreo no incluido</p>
+                        <p class="note" data-i18n="program_medical_note">* Cobertura médica a cargo del jugador</p>
+                        <a href="#contact" class="btn" data-i18n="program_apply_btn">Solicitar Ahora</a>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-content">
+                        <h3 data-i18n="program_3months_title">Programa Superior (3 Meses)</h3>
+                        <p class="price">€12.500</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature0">Alojamiento y pensión completa</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature1">60 días de entrenamiento de nivel profesional</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature2">Integración con la estructura de entrenamiento del club</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature4">Desarrollo técnico y táctico integral</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature5">Evaluación y programa de condición física profesional</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature6">Plan personalizado de nutrición y recuperación</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature7">Sesiones de coaching</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature8">Partidos competitivos con equipos de la academia</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature9">Asistencia de ojeadores en los partidos de entrenamiento</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature10">Informe profesional de ojeadores</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature11">Posible recomendación a clubes/academias</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature12">Kit completo de entrenamiento y partido del club</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="program_3months_feature13">Tour turístico guiado por la ciudad y alrededores</span></li>
+                        </ul>
+                        <p class="note" data-i18n="program_note">* Aéreo no incluido</p>
+                        <p class="note" data-i18n="program_medical_note">* Cobertura médica a cargo del jugador</p>
+                        <a href="#contact" class="btn" data-i18n="program_apply_btn">Solicitar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="teams" class="teams">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="teams_title">Nuestros Clubes Asociados</h2>
+                <p data-i18n="teams_subtitle">Entrena con los mejores clubes de baloncesto de España</p>
+            </div>
+            <div class="teams-grid">
+                <div class="team-card">
+                    <div class="team-logo">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <h3>Fuenlabrada</h3>
+                    <p>Club Baloncesto Fuenlabrada - Liga ACB</p>
+                    <div class="team-info">
+                        <span><i class="fas fa-map-marker-alt"></i> Fuenlabrada, Madrid</span>
+                        <span><i class="fas fa-trophy"></i> Liga ACB</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-logo">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <h3>Baskonia</h3>
+                    <p>Kirolbet Baskonia - Liga ACB & EuroLeague</p>
+                    <div class="team-info">
+                        <span><i class="fas fa-map-marker-alt"></i> Vitoria-Gasteiz</span>
+                        <span><i class="fas fa-trophy"></i> Liga ACB & EuroLeague</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-logo">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <h3>Unicaja</h3>
+                    <p>Unicaja Málaga - Liga ACB & EuroCup</p>
+                    <div class="team-info">
+                        <span><i class="fas fa-map-marker-alt"></i> Málaga</span>
+                        <span><i class="fas fa-trophy"></i> Liga ACB & EuroCup</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-logo">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <h3>Valencia</h3>
+                    <p>Valencia Basket - Liga ACB & EuroLeague</p>
+                    <div class="team-info">
+                        <span><i class="fas fa-map-marker-alt"></i> Valencia</span>
+                        <span><i class="fas fa-trophy"></i> Liga ACB & EuroLeague</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-logo">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <h3>Zentro Madrid</h3>
+                    <p>Zentro Basket Madrid - Liga LEB Oro</p>
+                    <div class="team-info">
+                        <span><i class="fas fa-map-marker-alt"></i> Madrid</span>
+                        <span><i class="fas fa-trophy"></i> Liga LEB Oro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header left-align">
+                <h2 data-i18n="about_title">Sobre Elite Basket Scouting</h2>
+                <p data-i18n="about_subtitle">Somos una organización especializada en el desarrollo de talentos de baloncesto, ofreciendo programas de entrenamiento de élite en los mejores clubes de España.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-i18n="about_mission_title">Nuestra Misión</h3>
+                    <p data-i18n="about_mission_text">Desarrollar jugadores de baloncesto de élite proporcionando entrenamiento profesional, evaluación técnica y oportunidades de exposición a ojeadores internacionales en los mejores clubes de España.</p>
+                    
+                    <h3 data-i18n="about_vision_title">Nuestra Visión</h3>
+                    <p data-i18n="about_vision_text">Ser la referencia en el desarrollo de talentos de baloncesto en Europa, conectando jugadores prometedores con oportunidades profesionales en clubes de ACB y competiciones europeas.</p>
+                    
+                    <h3 data-i18n="about_team_title">Nuestro Equipo</h3>
+                    <p data-i18n="about_team_text">Tenemos como Director Deportivo a <strong>Eduardo Pascual</strong>, con más de 30 años de experiencia organizando campus de baloncesto internacional para figuras como Luka Dončić y Pablo Prigioni, y como Representante Internacional a <strong>German Enrici</strong>.</p>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>30,000+</h4>
+                            <p data-i18n="about_stat_players">Jugadores Entrenados</p>
+                        </div>
+                        <div class="stat">
+                            <h4>5</h4>
+                            <p data-i18n="about_stat_clubs">Clubes de Élite</p>
+                        </div>
+                        <div class="stat">
+                            <h4>95%</h4>
+                            <p data-i18n="about_stat_success">Tasa de Éxito</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- Imagen eliminada temporalmente -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="testimonials_title">Testimonios de Jugadores</h2>
+                <p data-i18n="testimonials_subtitle">Lo que dicen nuestros jugadores sobre su experiencia</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p data-i18n="testimonial_1_text">"El programa de Elite Basket Scouting cambió mi vida. El entrenamiento profesional en Baskonia y la exposición a ojeadores me abrió las puertas al baloncesto europeo."</p>
+                        <div class="testimonial-author">
+                            <div>
+                                <h4 data-i18n="testimonial_1_name">Carlos R.</h4>
+                                <p data-i18n="testimonial_1_position">Base - Liga ACB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p data-i18n="testimonial_2_text">"La metodología de entrenamiento en Valencia Basket es excepcional. Me ayudó a mejorar mi técnica y táctica de manera significativa."</p>
+                        <div class="testimonial-author">
+                            <div>
+                                <h4 data-i18n="testimonial_2_name">María G.</h4>
+                                <p data-i18n="testimonial_2_position">Alera - Liga Femenina</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p data-i18n="testimonial_3_text">"Gracias a Elite Basket Scouting conseguí mi primer contrato profesional en Unicaja. El programa es completo y profesional."</p>
+                        <div class="testimonial-author">
+                            <div>
+                                <h4 data-i18n="testimonial_3_name">David L.</h4>
+                                <p data-i18n="testimonial_3_position">Pívot - LEB Oro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="facilities">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="facilities_title">Instalaciones de Clubes Profesionales</h2>
+                <p data-i18n="facilities_intro">Nuestros jugadores entrenan directamente en las instalaciones de clubes profesionales como Baskonia, Fuenlabrada, Valencia Basket, Zentro Madrid y Unicaja.</p>
+            </div>
+            <div class="facilities-intro">
+                <p data-i18n="facilities_experience">Gracias a esta experiencia única, acceden a espacios de élite utilizados por jugadores profesionales:</p>
+            </div>
+            <div class="facilities-list">
+                <div class="facility-item">
+                    <span class="facility-icon"><i class="fas fa-basketball-ball"></i></span>
+                    <div>
+                        <h3 data-i18n="facility_1_title">Pista Principal</h3>
+                        <p data-i18n="facility_1_description">Canchas oficiales con estándares profesionales, donde entrenan los equipos del club.</p>
+                    </div>
+                </div>
+                <div class="facility-item">
+                    <span class="facility-icon"><i class="fas fa-dumbbell"></i></span>
+                    <div>
+                        <h3 data-i18n="facility_2_title">Gimnasio</h3>
+                        <p data-i18n="facility_2_description">Equipado con máquinas de última generación, ideal para fuerza y acondicionamiento.</p>
+                    </div>
+                </div>
+                <div class="facility-item">
+                    <span class="facility-icon"><i class="fas fa-bed"></i></span>
+                    <div>
+                        <h3 data-i18n="facility_3_title">Sala de Recuperación</h3>
+                        <p data-i18n="facility_3_description">Áreas del club dedicadas a fisioterapia, recuperación muscular y masajes.</p>
+                    </div>
+                </div>
+                <div class="facility-item">
+                    <span class="facility-icon"><i class="fas fa-chalkboard"></i></span>
+                    <div>
+                        <h3 data-i18n="facility_4_title">Sala de Análisis</h3>
+                        <p data-i18n="facility_4_description">Espacios equipados para el análisis táctico y de rendimiento con tecnología avanzada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact_title">Solicita Información</h2>
+                <p data-i18n="contact_subtitle">Completa el formulario y nos pondremos en contacto contigo</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact_name_label">Nombre completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact_email_label">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-i18n="contact_phone_label">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age" data-i18n="contact_age_label">Edad</label>
+                            <input type="number" id="age" name="age" min="12" max="25" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="position" data-i18n="contact_position_label">Posición</label>
+                            <select id="position" name="position" required>
+                                <option value="" data-i18n="contact_position_placeholder">Selecciona tu posición</option>
+                                <option value="base" data-i18n="contact_position_base">Base</option>
+                                <option value="escolta" data-i18n="contact_position_escolta">Escolta</option>
+                                <option value="aler" data-i18n="contact_position_aler">Alero</option>
+                                <option value="ala-pivot" data-i18n="contact_position_ala_pivot">Ala-pívot</option>
+                                <option value="pivot" data-i18n="contact_position_pivot">Pívot</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="team" data-i18n="contact_team_label">Club de interés</label>
+                            <select id="team" name="team" required>
+                                <option value="" data-i18n="contact_team_placeholder">Selecciona un club</option>
+                                <option value="fuenlabrada" data-i18n="contact_team_fuenlabrada">Fuenlabrada</option>
+                                <option value="baskonia" data-i18n="contact_team_baskonia">Baskonia</option>
+                                <option value="unicaja" data-i18n="contact_team_unicaja">Unicaja</option>
+                                <option value="valencia" data-i18n="contact_team_valencia">Valencia</option>
+                                <option value="zentro" data-i18n="contact_team_zentro">Zentro Madrid</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="program" data-i18n="contact_program_label">Programa de interés</label>
+                            <select id="program" name="program" required>
+                                <option value="" data-i18n="contact_program_placeholder">Selecciona un programa</option>
+                                <option value="1week" data-i18n="contact_program_1week">Programa Master (1 Semana)</option>
+                                <option value="15days" data-i18n="contact_program_15days">Programa Pro (15 Días)</option>
+                                <option value="1month" data-i18n="contact_program_1month">Programa Élite (1 Mes)</option>
+                                <option value="2months" data-i18n="contact_program_2months">Programa Avanzado (2 Meses)</option>
+                                <option value="3months" data-i18n="contact_program_3months">Programa Superior (3 Meses)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact_message_label">Mensaje (opcional)</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact_submit_btn">Enviar Solicitud</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3 data-i18n="contact_info_title">Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-i18n="contact_address_title">Dirección</h4>
+                            <p data-i18n="contact_address">Madrid, España</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-i18n="contact_phone_title">Teléfono</h4>
+                            <p>+1 786 694 1287</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-i18n="contact_email_title">Email</h4>
+                            <p>info@elitebasketscouting.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elite Basket Scouting</h3>
+                    <p data-i18n="footer_description">Desarrollo profesional de talentos de baloncesto en los mejores clubes de España.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_programs_title">Programas</h4>
+                    <ul>
+                        <li><a href="#programs" data-i18n="footer_program_1week">1 Semana</a></li>
+                        <li><a href="#programs" data-i18n="footer_program_15days">15 Días</a></li>
+                        <li><a href="#programs" data-i18n="footer_program_1month">1 Mes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_teams_title">Clubes</h4>
+                    <ul>
+                        <li><a href="#teams">Fuenlabrada</a></li>
+                        <li><a href="#teams">Baskonia</a></li>
+                        <li><a href="#teams">Unicaja</a></li>
+                        <li><a href="#teams">Valencia</a></li>
+                        <li><a href="#teams">Zentro Madrid</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_contact_title">Contacto</h4>
+                    <p>+1 786 694 1287</p>
+                    <p>info@elitebasketscouting.com</p>
+                    <p data-i18n="footer_address">Madrid, España</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elite Basket Scouting. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

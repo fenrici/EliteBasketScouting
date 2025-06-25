@@ -1,0 +1,26 @@
+Este directorio contiene las imágenes del sitio web Elite Basket Scouting.
+
+Imágenes necesarias:
+- basketball-court-background.jpg (imagen de fondo del hero)
+- bandera-espana.webp (bandera española para selector de idioma)
+- bandera-usa.webp (bandera estadounidense para selector de idioma)
+- basketball-training.jpg (imagen de entrenamiento para sección about)
+- player-1.jpg (foto del jugador testimonial 1)
+- player-2.jpg (foto de la jugadora testimonial 2)
+- player-3.jpg (foto del jugador testimonial 3)
+- court-1.jpg (imagen de pista principal)
+- gym.jpg (imagen del gimnasio)
+- recovery.jpg (imagen de sala de recuperación)
+- classroom.jpg (imagen de sala de análisis)
+
+Para obtener imágenes de alta calidad, puedes usar:
+- Unsplash (https://unsplash.com)
+- Pexels (https://pexels.com)
+- Pixabay (https://pixabay.com)
+
+Busca términos como:
+- "basketball court"
+- "basketball training"
+- "basketball player"
+- "gym equipment"
+- "sports facility" 

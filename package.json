@@ -1,0 +1,43 @@
+{
+  "name": "elite-basket-scouting",
+  "version": "1.0.0",
+  "description": "Professional basketball training programs website",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "keywords": [
+    "basketball",
+    "training",
+    "scouting",
+    "sports",
+    "madrid",
+    "spain",
+    "professional",
+    "elite"
+  ],
+  "author": "Elite Basket Scouting Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/elite-basket-scouting.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/elite-basket-scouting/issues"
+  },
+  "homepage": "https://elitebasketscouting.com",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+} 
