@@ -1,4 +1,4 @@
-// Elite Basket Scouting - JavaScript Functionality
+// Pro Basket Europa - JavaScript Functionality
 
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
             mainNav.classList.toggle('active');
         });
     }
+
+
 
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
@@ -78,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'nav_contact': 'Solicitar',
             
             // Hero
-            'hero_title': 'Tu Camino al Baloncesto Profesional Comienza Aquí',
+            'hero_title': 'Tu Futuro en el Baloncesto Europeo',
             'hero_subtitle': 'Programas de entrenamiento de élite en los mejores clubes de España: Fuenlabrada, Baskonia, Unicaja, Valencia y Zentro Madrid',
             'hero_btn_explore': 'Explorar Programas',
             'hero_btn_apply': 'Solicitar Ahora',
@@ -106,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'teams_subtitle': 'Entrena con los mejores clubes de baloncesto de España',
             
             // About
-            'about_title': 'Sobre Elite Basket Scouting',
+            'about_title': 'Sobre Pro Basket Europa',
             'about_subtitle': 'Somos una organización especializada en el desarrollo de talentos de baloncesto, ofreciendo programas de entrenamiento de élite en los mejores clubes de España.',
             'about_mission_title': 'Nuestra Misión',
             'about_mission_text': 'Desarrollar jugadores de baloncesto de élite proporcionando entrenamiento profesional, evaluación técnica y oportunidades de exposición a ojeadores internacionales en los mejores clubes de España.',
@@ -122,13 +124,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Testimonials
             'testimonials_title': 'Testimonios de Jugadores',
             'testimonials_subtitle': 'Lo que dicen nuestros jugadores sobre su experiencia',
-            'testimonial_1_text': '"El programa de Elite Basket Scouting cambió mi vida. El entrenamiento profesional en Baskonia y la exposición a ojeadores me abrió las puertas al baloncesto europeo."',
+            'testimonial_1_text': '"El programa de Pro Basket Europa cambió mi vida. El entrenamiento profesional en Baskonia y la exposición a ojeadores me abrió las puertas al baloncesto europeo."',
             'testimonial_1_name': 'Carlos R.',
             'testimonial_1_position': 'Base - Liga ACB',
             'testimonial_2_text': '"La metodología de entrenamiento en Valencia Basket es excepcional. Me ayudó a mejorar mi técnica y táctica de manera significativa."',
             'testimonial_2_name': 'María G.',
             'testimonial_2_position': 'Alera - Liga Femenina',
-            'testimonial_3_text': '"Gracias a Elite Basket Scouting conseguí mi primer contrato profesional en Unicaja. El programa es completo y profesional."',
+            'testimonial_3_text': '"Gracias a Pro Basket Europa conseguí mi primer contrato profesional en Unicaja. El programa es completo y profesional."',
             'testimonial_3_name': 'David L.',
             'testimonial_3_position': 'Pívot - LEB Oro',
             
@@ -152,6 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_email_label': 'Email',
             'contact_phone_label': 'Teléfono',
             'contact_age_label': 'Edad',
+            'contact_experience_label': 'Experiencia',
             'contact_position_label': 'Posición',
             'contact_position_placeholder': 'Selecciona tu posición',
             'contact_position_base': 'Base',
@@ -159,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_position_aler': 'Alero',
             'contact_position_ala_pivot': 'Ala-pívot',
             'contact_position_pivot': 'Pívot',
-            'contact_team_label': 'Club de interés',
+            'contact_team_label': 'Club de preferencia',
             'contact_team_placeholder': 'Selecciona un club',
             'contact_team_fuenlabrada': 'Fuenlabrada',
             'contact_team_baskonia': 'Baskonia',
@@ -178,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_submit_btn': 'Enviar Solicitud',
             'contact_info_title': 'Información de Contacto',
             'contact_address_title': 'Dirección',
-            'contact_address': 'Madrid, España',
+            'contact_address': 'España',
             'contact_phone_title': 'Teléfono',
             'contact_email_title': 'Email',
             
@@ -191,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'footer_program_1year': '1 Año',
             'footer_teams_title': 'Clubes',
             'footer_contact_title': 'Contacto',
-            'footer_address': 'Madrid, España',
+            'footer_address': 'España',
             'footer_rights': 'Todos los derechos reservados.',
             // Características Programa 1 Semana
             program_1week_feature0: "Alojamiento y pensión completa",
@@ -201,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
             program_1week_feature4: "Plan de desarrollo personalizado",
             program_1week_feature5: "Kit de entrenamiento oficial del club",
             program_1week_feature6: "Sesión de análisis de video",
-            program_1week_feature7: "Tour turístico guiado por la ciudad",
+
             // Características Programa 15 Días
             program_15days_feature0: "Alojamiento y pensión completa",
             program_15days_feature1: "10 días de sesiones intensivas de entrenamiento",
@@ -213,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
             program_15days_feature8: "Sesiones de análisis de video",
             program_15days_feature9: "Paquete completo de kit de entrenamiento del club",
             program_15days_feature10: "Informe de ojeadores y ruta de desarrollo",
-            program_15days_feature11: "Tour turístico guiado por la ciudad",
+
             // Características Programa 1 Mes
             program_1month_feature0: "Alojamiento y pensión completa",
             program_1month_feature1: "20 días de entrenamiento de nivel profesional",
@@ -227,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
             program_1month_feature10: "Informe profesional de ojeadores",
             program_1month_feature11: "Posible recomendación a clubes/academias",
             program_1month_feature12: "Kit completo de entrenamiento y partido del club",
-            program_1month_feature13: "Tour turístico guiado por la ciudad y alrededores",
+
             // Características Programa 2 Meses
             program_2months_feature0: "Alojamiento y pensión completa",
             program_2months_feature1: "40 días de entrenamiento de nivel profesional",
@@ -241,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
             program_2months_feature10: "Informe profesional de ojeadores",
             program_2months_feature11: "Posible recomendación a clubes/academias",
             program_2months_feature12: "Kit completo de entrenamiento y partido del club",
-            program_2months_feature13: "Tour turístico guiado por la ciudad y alrededores",
+
             // Características Programa 3 Meses
             program_3months_feature0: "Alojamiento y pensión completa",
             program_3months_feature1: "60 días de entrenamiento de nivel profesional",
@@ -255,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
             program_3months_feature10: "Informe profesional de ojeadores",
             program_3months_feature11: "Posible recomendación a clubes/academias",
             program_3months_feature12: "Kit completo de entrenamiento y partido del club",
-            program_3months_feature13: "Tour turístico guiado por la ciudad y alrededores",
+
             program_1year_feature1: "Alojamiento y pensión completa"
         },
         en: {
@@ -269,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'nav_contact': 'Apply',
             
             // Hero
-            'hero_title': 'Your Path to Professional Basketball Starts Here',
+            'hero_title': 'Your Future in European Basketball',
             'hero_subtitle': 'Elite training programs in the best clubs in Spain: Fuenlabrada, Baskonia, Unicaja, Valencia and Zentro Madrid',
             'hero_btn_explore': 'Explore Programs',
             'hero_btn_apply': 'Apply Now',
@@ -297,7 +300,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'teams_subtitle': 'Train with the best basketball clubs in Spain',
             
             // About
-            'about_title': 'About Elite Basket Scouting',
+            'about_title': 'About Pro Basket Europa',
             'about_subtitle': 'We are an organization specialized in basketball talent development, offering elite training programs in the best clubs in Spain.',
             'about_mission_title': 'Our Mission',
             'about_mission_text': 'Develop elite basketball players by providing professional training, technical evaluation and opportunities for exposure to international scouts in the best clubs in Spain.',
@@ -313,13 +316,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Testimonials
             'testimonials_title': 'Player Testimonials',
             'testimonials_subtitle': 'What our players say about their experience',
-            'testimonial_1_text': '"The Elite Basket Scouting program changed my life. The professional training at Baskonia and exposure to scouts opened the doors to European basketball."',
+            'testimonial_1_text': '"The Pro Basket Europa program changed my life. The professional training at Baskonia and exposure to scouts opened the doors to European basketball."',
             'testimonial_1_name': 'Carlos R.',
             'testimonial_1_position': 'Point Guard - ACB League',
             'testimonial_2_text': '"The training methodology at Valencia Basket is exceptional. It helped me improve my technique and tactics significantly."',
             'testimonial_2_name': 'María G.',
             'testimonial_2_position': 'Forward - Women\'s League',
-            'testimonial_3_text': '"Thanks to Elite Basket Scouting I got my first professional contract at Unicaja. The program is complete and professional."',
+            'testimonial_3_text': '"Thanks to Pro Basket Europa I got my first professional contract at Unicaja. The program is complete and professional."',
             'testimonial_3_name': 'David L.',
             'testimonial_3_position': 'Center - LEB Oro',
             
@@ -343,6 +346,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_email_label': 'Email',
             'contact_phone_label': 'Phone',
             'contact_age_label': 'Age',
+            'contact_experience_label': 'Experience',
             'contact_position_label': 'Position',
             'contact_position_placeholder': 'Select your position',
             'contact_position_base': 'Point Guard',
@@ -350,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_position_aler': 'Small Forward',
             'contact_position_ala_pivot': 'Power Forward',
             'contact_position_pivot': 'Center',
-            'contact_team_label': 'Club of interest',
+            'contact_team_label': 'Preferred Club',
             'contact_team_placeholder': 'Select a club',
             'contact_team_fuenlabrada': 'Fuenlabrada',
             'contact_team_baskonia': 'Baskonia',
@@ -369,7 +373,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_submit_btn': 'Send Request',
             'contact_info_title': 'Contact Information',
             'contact_address_title': 'Address',
-            'contact_address': 'Madrid, Spain',
+            'contact_address': 'Spain',
             'contact_phone_title': 'Phone',
             'contact_email_title': 'Email',
             
@@ -382,7 +386,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'footer_program_1year': '1 Year',
             'footer_teams_title': 'Clubs',
             'footer_contact_title': 'Contact',
-            'footer_address': 'Madrid, Spain',
+            'footer_address': 'Spain',
             'footer_rights': 'All rights reserved.',
             // Program Features 1 Week
             program_1week_feature0: "Accommodation and full board",
@@ -491,14 +495,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
             // Get form data
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
             
             // Basic validation
             if (!data.name || !data.email || !data.phone || !data.age || !data.position || !data.team || !data.program) {
+                e.preventDefault();
                 alert('Por favor completa todos los campos obligatorios.');
                 return;
             }
@@ -509,13 +512,8 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.innerHTML = '<span class="loading"></span> Enviando...';
             submitBtn.disabled = true;
             
-            // Simulate form submission (replace with actual backend integration)
-            setTimeout(() => {
-                alert('¡Gracias por tu solicitud! Nos pondremos en contacto contigo pronto.');
-                this.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
+            // Allow form to submit to Formspree
+            // The form will handle the submission automatically
         });
     }
 
@@ -547,11 +545,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
         if (scrollTop > lastScrollTop && scrollTop > 100) {
-            // Scrolling down
-            header.style.transform = 'translateY(-100%)';
+            // Scrolling down - hide navbar
+            header.classList.add('navbar-hidden');
         } else {
-            // Scrolling up
-            header.style.transform = 'translateY(0)';
+            // Scrolling up - show navbar
+            header.classList.remove('navbar-hidden');
         }
         
         lastScrollTop = scrollTop;
