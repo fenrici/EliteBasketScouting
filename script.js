@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (mobileMenuToggle && mainNav) {
         mobileMenuToggle.addEventListener('click', function() {
-            mainNav.classList.toggle('active');
+            if (mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+            } else {
+                mainNav.classList.add('active');
+            }
         });
     }
 
