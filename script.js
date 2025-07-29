@@ -103,6 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'program_1month_title': 'Programa Élite (1 Mes)',
             'program_2months_title': 'Programa Avanzado (2 Meses)',
             'program_3months_title': 'Programa Superior (3 Meses)',
+            'program_annual_title': 'Programa Anual (12 Meses)',
             'program_1year_title': 'Programa Premium – 1 Año en España',
             'program_1year_price': '€25.500',
             'program_1year_description': 'Para jugadores que buscan dar el salto al baloncesto profesional europeo. Este programa está diseñado para integrar al jugador a la estructura oficial durante toda una temporada.',
@@ -118,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'about_mission_text': 'Desarrollar jugadores de baloncesto de élite proporcionando entrenamiento profesional, evaluación técnica y oportunidades de exposición a ojeadores internacionales en los mejores clubes de España.',
             'about_vision_title': 'Nuestra Visión',
             'about_vision_text': 'Ser la referencia en el desarrollo de talentos de baloncesto en Europa, conectando jugadores prometedores con oportunidades profesionales en clubes de ACB y competiciones europeas.',
+            'about_summary_text': 'Pro Basket Europa es la referencia en el desarrollo de talentos de baloncesto en Europa, conectando jugadores prometedores con oportunidades profesionales en clubes de ACB y competiciones europeas. Nuestro equipo, liderado por el Director Deportivo <strong>Eduardo Pascual</strong> con más de 30 años de experiencia organizando campus de baloncesto internacional para figuras como Luka Dončić y Pablo Prigioni, desarrolla jugadores de élite proporcionando entrenamiento profesional, evaluación técnica y oportunidades de exposición a ojeadores internacionales en los mejores clubes de España. Por su parte, <strong>Germán Enrici</strong>, Director de Relaciones Internacionales, es el nexo entre los diferentes países y culturas que se unen en nuestros proyectos, asegurando una comunicación cercana y una experiencia global de calidad.',
             'about_team_title': 'Nuestro Equipo',
             'about_team_text': 'Contamos con un equipo directivo de excelencia liderado por nuestro Director Deportivo, <strong>Eduardo Pascual</strong>, referente en el baloncesto internacional con más de 30 años de experiencia. Ha organizado y dirigido campus de alto rendimiento para estrellas como <strong>Luka Dončić</strong> y <strong>Pablo Prigioni</strong>, y ha colaborado con los clubes y entrenadores más prestigiosos de Europa.' +
                 '<br><br>A nivel internacional, nos respalda la gestión de <strong>German Enrici</strong> como Representante Internacional, quien aporta una amplia red de contactos y experiencia en el desarrollo de talento y oportunidades para jugadores en el ámbito global.',
@@ -180,6 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_program_1month': 'Programa Élite (1 Mes)',
             'contact_program_2months': 'Programa Avanzado (2 Meses)',
             'contact_program_3months': 'Programa Superior (3 Meses)',
+            'contact_program_annual': 'Programa Anual (12 Meses)',
             'contact_program_1year': 'Programa Premium (1 Año)',
             'contact_message_label': 'Mensaje (opcional)',
             'contact_submit_btn': 'Enviar Solicitud',
@@ -263,6 +266,34 @@ document.addEventListener('DOMContentLoaded', function() {
             program_3months_feature11: "Posible recomendación a clubes/academias",
             program_3months_feature12: "Kit completo de entrenamiento y partido del club",
 
+            // Características Programa Anual
+            program_annual_feature0: "Alojamiento y pensión completa",
+            program_annual_feature1: "240 días de entrenamiento de nivel profesional",
+            program_annual_feature2: "Integración completa con la estructura de entrenamiento del club",
+            program_annual_feature3: "Desarrollo técnico y táctico integral",
+            program_annual_feature4: "Evaluación y programa de condición física profesional",
+            program_annual_feature5: "Plan personalizado de nutrición y recuperación",
+            program_annual_feature6: "Sesiones de coaching personalizadas",
+            program_annual_feature7: "Partidos competitivos con equipos de la academia",
+            program_annual_feature8: "Asistencia de ojeadores en los partidos de entrenamiento",
+            program_annual_feature9: "Informe profesional de ojeadores",
+            program_annual_feature10: "Posible recomendación a clubes/academias",
+            program_annual_feature11: "Kit completo de entrenamiento y partido del club",
+            program_annual_feature12: "Seguimiento académico y apoyo educativo",
+            program_annual_feature13: "Participación en competiciones oficiales del club",
+            program_annual_feature14: "Mentoría personalizada con jugadores profesionales",
+
+            // Requisitos del Programa Anual
+            program_annual_requirements_title: "Requisitos del Programa",
+            program_annual_requirements_educational: "Requisitos Educativos",
+            program_annual_requirements_documentation: "Requisitos de Documentación",
+            program_annual_requirements_minors: "Menores en edad escolar:",
+            program_annual_requirements_minors_desc: "Modalidad online en su país de origen",
+            program_annual_requirements_adults: "Adultos con educación secundaria completa:",
+            program_annual_requirements_adults_desc: "Acceso a universidades europeas asociadas",
+            program_annual_requirements_passport: "Requisito indispensable:",
+            program_annual_requirements_passport_desc: "Pasaporte o ciudadanía europea vigente",
+
             program_1year_feature1: "Alojamiento y pensión completa"
         },
         en: {
@@ -295,6 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'program_1month_title': 'Elite Program (1 Month)',
             'program_2months_title': 'Advanced Program (2 Months)',
             'program_3months_title': 'Superior Program (3 Months)',
+            'program_annual_title': 'Annual Program (12 Months)',
             'program_1year_title': 'Premium Program – 1 Year in Spain',
             'program_1year_price': '€25,500',
             'program_1year_description': 'For players looking to make the jump to European professional basketball. This program is designed to integrate the player into the official structure for an entire season.',
@@ -310,6 +342,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'about_mission_text': 'Develop elite basketball players by providing professional training, technical evaluation and opportunities for exposure to international scouts in the best clubs in Spain.',
             'about_vision_title': 'Our Vision',
             'about_vision_text': 'To be the reference in basketball talent development in Europe, connecting promising players with professional opportunities in ACB clubs and European competitions.',
+            'about_summary_text': 'Pro Basket Europa is the reference in basketball talent development in Europe, connecting promising players with professional opportunities in ACB clubs and European competitions. Our team, led by Sports Director <strong>Eduardo Pascual</strong> with over 30 years of experience organizing international basketball camps for figures such as Luka Dončić and Pablo Prigioni, develops elite players by providing professional training, technical evaluation and opportunities for exposure to international scouts in the best clubs in Spain. For his part, <strong>Germán Enrici</strong>, Director of International Relations, is the nexus between the different countries and cultures that come together in our projects, ensuring close communication and a quality global experience.',
             'about_team_title': 'Our Team',
             'about_team_text': 'We are proud to have an outstanding leadership team headed by our Sports Director, <strong>Eduardo Pascual</strong>—a renowned figure in international basketball with over 30 years of experience. He has organized and led elite training camps for top players such as <strong>Luka Dončić</strong> and <strong>Pablo Prigioni</strong>, and has worked alongside Europe\'s most prestigious clubs and coaches.' +
                 '<br><br>On the international stage, our operations are strengthened by <strong>German Enrici</strong> as International Representative, bringing an extensive network and proven expertise in talent development and global player opportunities.',
@@ -372,6 +405,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_program_1month': 'Elite Program (1 Month)',
             'contact_program_2months': 'Advanced Program (2 Months)',
             'contact_program_3months': 'Superior Program (3 Months)',
+            'contact_program_annual': 'Annual Program (12 Months)',
             'contact_program_1year': 'Premium Program (1 Year)',
             'contact_message_label': 'Message (optional)',
             'contact_submit_btn': 'Send Request',
@@ -455,6 +489,35 @@ document.addEventListener('DOMContentLoaded', function() {
             program_3months_feature11: "Potential recommendation to clubs/academies",
             program_3months_feature12: "Full club training and match kit",
             program_3months_feature13: "Guided city and surroundings tour",
+            
+            // Annual Program Features
+            program_annual_feature0: "Accommodation and full board",
+            program_annual_feature1: "240 days of professional-level training",
+            program_annual_feature2: "Complete integration with the club's training structure",
+            program_annual_feature3: "Comprehensive technical and tactical development",
+            program_annual_feature4: "Professional fitness assessment and program",
+            program_annual_feature5: "Personalized nutrition and recovery plan",
+            program_annual_feature6: "Personalized coaching sessions",
+            program_annual_feature7: "Competitive matches with academy teams",
+            program_annual_feature8: "Scout attendance at training matches",
+            program_annual_feature9: "Professional scouting report",
+            program_annual_feature10: "Potential recommendation to clubs/academies",
+            program_annual_feature11: "Full club training and match kit",
+            program_annual_feature12: "Academic follow-up and educational support",
+            program_annual_feature13: "Participation in official club competitions",
+            program_annual_feature14: "Personalized mentorship with professional players",
+            
+            // Annual Program Requirements
+            program_annual_requirements_title: "Program Requirements",
+            program_annual_requirements_educational: "Educational Requirements",
+            program_annual_requirements_documentation: "Documentation Requirements",
+            program_annual_requirements_minors: "School-age minors:",
+            program_annual_requirements_minors_desc: "Online modality in their country of origin",
+            program_annual_requirements_adults: "Adults with completed secondary education:",
+            program_annual_requirements_adults_desc: "Access to associated European universities",
+            program_annual_requirements_passport: "Indispensable requirement:",
+            program_annual_requirements_passport_desc: "Valid passport or European citizenship",
+            
             program_1year_feature1: "Accommodation and full board"
         }
     };
