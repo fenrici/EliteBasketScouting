@@ -160,6 +160,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_email_label': 'Email',
             'contact_phone_label': 'Teléfono',
             'contact_age_label': 'Edad',
+            'contact_age_help': 'La edad debe estar entre 14 y 20 años',
+            'contact_start_date_label': 'Fecha de inicio deseada',
+            'contact_start_date_help': 'Selecciona una fecha futura para comenzar el programa',
             'contact_nationality_label': 'Nacionalidad',
             'contact_experience_label': 'Experiencia',
             'contact_position_label': 'Posición',
@@ -384,6 +387,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_email_label': 'Email',
             'contact_phone_label': 'Phone',
             'contact_age_label': 'Age',
+            'contact_age_help': 'Age must be between 14 and 20 years',
+            'contact_start_date_label': 'Desired start date',
+            'contact_start_date_help': 'Select a future date to start the program',
             'contact_nationality_label': 'Nationality',
             'contact_experience_label': 'Experience',
             'contact_position_label': 'Position',
@@ -569,9 +575,28 @@ document.addEventListener('DOMContentLoaded', function() {
             const data = Object.fromEntries(formData);
             
             // Basic validation
-            if (!data.name || !data.email || !data.phone || !data.age || !data.position || !data.team || !data.program) {
+            if (!data.name || !data.email || !data.phone || !data.age || !data.start_date || !data.position || !data.team || !data.program) {
                 e.preventDefault();
                 alert('Por favor completa todos los campos obligatorios.');
+                return;
+            }
+            
+            // Age validation (14-20 years)
+            const age = parseInt(data.age);
+            if (age < 14 || age > 20) {
+                e.preventDefault();
+                alert('La edad debe estar entre 14 y 20 años.');
+                return;
+            }
+            
+            // Start date validation (must be in the future)
+            const startDate = new Date(data.start_date);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0); // Reset time to start of day
+            
+            if (startDate < today) {
+                e.preventDefault();
+                alert('La fecha de inicio debe ser en el futuro.');
                 return;
             }
             
@@ -704,6 +729,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
+    // Set minimum date for start date field to today
+    const startDateField = document.getElementById('start_date');
+    if (startDateField) {
+        const today = new Date().toISOString().split('T')[0];
+        startDateField.setAttribute('min', today);
+    }
 
     // Initialize the page with default language
     updateLanguage(currentLang);
