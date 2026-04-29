@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
             program_annual_feature14: "Mentoría personalizada con jugadores profesionales",
 
             // Requisitos del Programa Anual
-            program_annual_requirements_title: "Requisitos del Programa",
+            program_annual_requirements_title: "Requisitos del programa ANUAL",
             program_annual_requirements_educational: "Requisitos Educativos",
             program_annual_requirements_documentation: "Requisitos de Documentación",
             program_annual_requirements_minors: "Menores en edad escolar:",
@@ -735,6 +735,42 @@ document.addEventListener('DOMContentLoaded', function() {
     if (startDateField) {
         const today = new Date().toISOString().split('T')[0];
         startDateField.setAttribute('min', today);
+    }
+
+    // Teams carousel controls (desktop) + swipe scroll (mobile)
+    const teamsCarousel = document.querySelector('.teams-carousel');
+    if (teamsCarousel) {
+        const track = teamsCarousel.querySelector('.teams-track');
+        const prevBtn = teamsCarousel.querySelector('.carousel-btn.prev');
+        const nextBtn = teamsCarousel.querySelector('.carousel-btn.next');
+
+        const getStep = () => {
+            const firstCard = track?.querySelector('.team-card');
+            if (!firstCard) return 320;
+            const cardWidth = firstCard.getBoundingClientRect().width;
+            const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || '0') || 0;
+            return Math.round(cardWidth + gap);
+        };
+
+        const updateCarouselButtons = () => {
+            if (!track || !prevBtn || !nextBtn) return;
+            const maxScrollLeft = track.scrollWidth - track.clientWidth;
+            prevBtn.disabled = track.scrollLeft <= 2;
+            nextBtn.disabled = track.scrollLeft >= maxScrollLeft - 2;
+        };
+
+        const scrollByStep = (dir) => {
+            if (!track) return;
+            track.scrollBy({ left: dir * getStep(), behavior: 'smooth' });
+        };
+
+        if (prevBtn) prevBtn.addEventListener('click', () => scrollByStep(-1));
+        if (nextBtn) nextBtn.addEventListener('click', () => scrollByStep(1));
+        if (track) {
+            track.addEventListener('scroll', updateCarouselButtons, { passive: true });
+            window.addEventListener('resize', updateCarouselButtons);
+            updateCarouselButtons();
+        }
     }
 
     // Initialize the page with default language

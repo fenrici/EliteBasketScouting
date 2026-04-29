@@ -137,12 +137,13 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(135deg, rgba(0,0,0,0.96), rgba(255,215,0,0.08));
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 0.5rem 0;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease-in-out;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.18);
 }
 
 header.navbar-hidden {
@@ -153,7 +154,7 @@ header.navbar-hidden {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .logo h1 {
@@ -188,8 +189,8 @@ header.navbar-hidden {
 }
 
 .language-option.active {
-    background: var(--primary-color);
-    color: white;
+    background: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .language-option:hover {
@@ -230,7 +231,7 @@ header.navbar-hidden {
 }
 
 .main-nav a {
-    color: var(--dark-color);
+    color: rgba(255, 255, 255, 0.92);
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -245,15 +246,15 @@ header.navbar-hidden {
 }
 
 .main-nav .cta-button {
-    background: var(--primary-color);
-    color: white;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     padding: 0.75rem 1.5rem;
     border-radius: 25px;
     font-weight: 600;
 }
 
 .main-nav .cta-button:hover {
-    background: var(--secondary-color);
+    background: rgba(255, 215, 0, 0.9);
     color: var(--primary-color);
     transform: translateY(-2px);
 }
@@ -386,7 +387,7 @@ header.navbar-hidden {
     gap: 2.5rem;
     margin-top: 3rem;
     justify-items: center;
-    align-items: stretch;
+    align-items: start;
 }
 
 .program-card {
@@ -401,10 +402,9 @@ header.navbar-hidden {
     border: 1px solid rgba(255, 255, 255, 0.18);
     max-width: 370px;
     width: 100%;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .program-card:hover {
@@ -436,7 +436,6 @@ header.navbar-hidden {
     padding: 2.2rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .program-content h3,
@@ -505,7 +504,7 @@ header.navbar-hidden {
     padding: 1rem;
     border-radius: 10px;
     font-weight: 700;
-    margin-top: auto;
+    margin-top: 1rem;
     border: 2px solid var(--secondary-color);
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -529,6 +528,85 @@ header.navbar-hidden {
     margin: 1.5rem 0;
     border-left: 4px solid var(--secondary-color);
     border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.annual-requirements {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.annual-requirements .program-requirements {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255, 215, 0, 0.28);
+    border-left: none;
+    padding: 1.75rem 2rem;
+}
+
+.annual-requirements .requirements-mini {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.annual-requirements .program-requirements h4 {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.3px;
+}
+
+.annual-requirements .program-requirements h4 i {
+    color: var(--secondary-color);
+}
+
+.annual-requirements .requirement-mini {
+    background: rgba(0, 0, 0, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 14px;
+    padding: 1.25rem 1.25rem;
+}
+
+.annual-requirements .requirements-mini > .requirement-mini:first-child {
+    position: relative;
+}
+
+.annual-requirements .requirements-mini > .requirement-mini:first-child::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: -1rem;
+    height: calc(100% - 28px);
+    width: 1px;
+    background: rgba(255, 215, 0, 0.18);
+}
+
+.annual-requirements .requirement-mini h5 {
+    font-size: 1.02rem;
+    margin-bottom: 0.85rem;
+}
+
+.annual-requirements .requirement-mini ul {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.annual-requirements .requirement-mini li {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.annual-requirements .requirement-mini strong {
+    color: rgba(255, 215, 0, 0.95);
+    font-weight: 700;
 }
 
 .program-requirements h4 {
@@ -626,6 +704,88 @@ header.navbar-hidden {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+}
+
+.teams-carousel {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.teams-track {
+    display: flex;
+    gap: 1.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0.5rem 0.25rem 1rem 0.25rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.teams-track::-webkit-scrollbar {
+    height: 10px;
+}
+
+.teams-track::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+}
+
+.teams-track::-webkit-scrollbar-thumb {
+    background: rgba(255, 215, 0, 0.28);
+    border-radius: 999px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.teams-track:focus {
+    outline: none;
+}
+
+.teams-track:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.25);
+    border-radius: 16px;
+}
+
+.teams-carousel .team-card {
+    scroll-snap-align: start;
+    flex: 0 0 300px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 215, 0, 0.35);
+    background: rgba(0, 0, 0, 0.55);
+    color: rgba(255, 255, 255, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 215, 0, 0.16);
+    transform: translateY(-50%) scale(1.05);
+    border: 1px solid rgba(255, 215, 0, 0.55);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.carousel-btn.prev {
+    left: -10px;
+}
+
+.carousel-btn.next {
+    right: -10px;
 }
 
 .team-card {
@@ -1273,7 +1433,6 @@ footer {
         height: 100px;
         max-width: 500px;
         margin: 0;
-        margin-left: -6rem;
         display: block;
     }
     
@@ -1288,8 +1447,7 @@ footer {
         flex: 1;
         justify-content: center;
         align-items: center;
-        transform: translateY(2rem);
-        margin-left: 2rem;
+        padding-right: 1rem;
     }
     
     .main-nav ul {
@@ -1305,7 +1463,8 @@ footer {
         align-items: center;
         flex: 0 0 auto;
         height: 100%;
-        margin-left: 2rem;
+        margin-left: 4.5rem;
+        padding-left: 0.5rem;
     }
     
     .language-selector {
@@ -1319,11 +1478,16 @@ footer {
         gap: 2rem;
         align-items: center;
     }
+
+    /* Más aire entre el logo y el primer link ("Inicio") */
+    .main-nav ul li:first-child {
+        margin-left: 1.25rem;
+    }
     
     .main-nav a {
         font-size: 1rem;
         padding: 0.5rem 1rem;
-        color: var(--primary-color);
+        color: rgba(255, 255, 255, 0.92);
         background: none;
         border-radius: 0;
         width: auto;
@@ -1336,8 +1500,8 @@ footer {
         width: auto;
         max-width: none;
         display: inline-block;
-        background: var(--primary-color);
-        color: white;
+        background: var(--secondary-color);
+        color: var(--primary-color);
         padding: 0.5rem 1.5rem;
         border-radius: 5px;
     }
@@ -1346,11 +1510,11 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
-        padding: 2rem 0;
+        padding: 0.75rem 0;
     }
     
     body {
-        padding-top: 120px;
+        padding-top: 96px;
     }
     
     .mobile-menu-toggle {
@@ -1367,13 +1531,13 @@ footer {
         top: 100%;
         right: 0;
         width: 100%;
-        background: rgba(255, 255, 255, 0.95);
+        background: linear-gradient(135deg, rgba(0,0,0,0.96), rgba(255,215,0,0.08));
         backdrop-filter: blur(10px);
         box-shadow: 0 8px 32px rgba(0,0,0,0.15);
         z-index: 1200;
         padding: 2rem 0 3rem 0;
         border-radius: 0 0 0 20px;
-        border-top: 1px solid rgba(0,0,0,0.05);
+        border-top: 1px solid rgba(255,255,255,0.08);
         max-height: 80vh;
         overflow-y: auto;
         transform: translateX(100%);
@@ -1409,7 +1573,7 @@ footer {
     .main-nav a {
         font-size: 1.1rem;
         padding: 1rem 2rem;
-        color: var(--primary-color);
+        color: rgba(255, 255, 255, 0.92);
         background: none;
         border-radius: 8px;
         width: 100%;
@@ -1432,8 +1596,8 @@ footer {
         margin-bottom: 0;
         width: 100%;
         display: block;
-        background: var(--primary-color);
-        color: white;
+        background: var(--secondary-color);
+        color: var(--primary-color);
         padding: 1rem 2rem;
         border-radius: 8px;
         font-weight: 600;
@@ -1453,7 +1617,7 @@ footer {
     }
 
     .main-nav .cta-button:hover {
-        background: var(--secondary-color);
+        background: rgba(255, 215, 0, 0.9);
         color: var(--primary-color);
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(255, 215, 0, 0.25);
@@ -1513,8 +1677,34 @@ footer {
         padding: 1rem;
     }
 
+    .annual-requirements {
+        margin-top: 1.5rem;
+    }
+
+    .annual-requirements .requirements-mini {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .annual-requirements .program-requirements {
+        padding: 1.25rem 1.1rem;
+    }
+
+    .annual-requirements .requirements-mini > .requirement-mini:first-child::after {
+        display: none;
+    }
+
     .teams-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .carousel-btn {
+        display: none;
+    }
+
+    .teams-carousel .team-card {
+        flex: 0 0 84%;
+        max-width: 420px;
     }
 
     .about-content {
