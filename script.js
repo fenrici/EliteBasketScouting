@@ -1,6 +1,17 @@
 // Pro Basket Europa - JavaScript Functionality
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Keep body offset perfectly aligned with the fixed header (iOS Safari friendly)
+    const headerEl = document.querySelector('header');
+    const setHeaderHeightVar = () => {
+        if (!headerEl) return;
+        const h = Math.ceil(headerEl.getBoundingClientRect().height);
+        document.documentElement.style.setProperty('--header-height', `${h}px`);
+    };
+    setHeaderHeightVar();
+    window.addEventListener('resize', setHeaderHeightVar);
+    window.addEventListener('load', setHeaderHeightVar);
+
     // Mobile menu toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const mainNav = document.querySelector('.main-nav');
