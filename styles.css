@@ -1528,7 +1528,9 @@ footer {
         top: 100%;
         right: 0;
         width: 100%;
-        background: linear-gradient(135deg, rgba(0,0,0,0.96), rgba(255,215,0,0.08));
+        /* Fondo prácticamente opaco para que el texto siempre se lea bien sobre el hero */
+        background-color: rgba(6, 6, 6, 0.98);
+        background-image: radial-gradient(900px 320px at 70% 0%, rgba(255, 215, 0, 0.12), rgba(0, 0, 0, 0) 60%);
         backdrop-filter: blur(10px);
         box-shadow: 0 8px 32px rgba(0,0,0,0.15);
         z-index: 1200;
